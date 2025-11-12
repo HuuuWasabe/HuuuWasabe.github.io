@@ -1,0 +1,64 @@
+.menu-header {
+    display: flex;
+    align-items: center;
+    padding: 18px 24px;
+    color: white;
+    font-weight: bold;
+}
+
+.menu-nav {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.logo { 
+    height: 50px;       
+    width: auto;        
+}
+
+.menu-nav ul {
+  display: flex;
+  gap: 30px;          
+  list-style: none;   
+  align-items: center;
+}
+
+/* Underline when hover simple animation */
+.menu-nav a {
+  text-decoration: none;
+  color: white;
+  padding: 6px 8px;
+  border-radius: 4px;
+}
+
+.menu-nav a:hover,
+
+.menu-nav a:focus {
+  text-decoration: underline;
+  text-decoration-color: #c75e2e;
+  outline: none;
+}
+
+/* Dropdown when clicked */
+.menu-drop {
+  display: none;
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  background-color: #524949;
+  min-width: 160px;
+}
+
+.menu-drop li {
+    display: block;
+  }
+
+.menu-drop-show {
+  display: block;
+}
