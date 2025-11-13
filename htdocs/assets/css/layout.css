@@ -1,3 +1,4 @@
+/* General Layout */
 * { 
     box-sizing: border-box;
     margin: 0;
@@ -11,10 +12,4 @@
     text-align: center;
     font-size: 35px;
     color: white;
-}
-
-.profile-image {
-    float: right;
-    margin-left: 60%;
-    width: 200px;
 }

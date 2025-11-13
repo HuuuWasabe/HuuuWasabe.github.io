@@ -1,0 +1,30 @@
+/* Profile Layout */
+.profile-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.profile-image-container {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    position: relative;
+    padding-top: 20px;
+}
+
+.profile-image {
+    width: 500px;
+    height: auto;
+}
+
+.profile-text {
+    flex: 1;
+    padding: 32px;
+    text-align: left;
+    font-size: 40px;
+    color: white;
+}

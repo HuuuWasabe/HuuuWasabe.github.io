@@ -1,3 +1,25 @@
-.name-header {
+.name-section {
+    text-align: center;
+    padding: 18px 24px;
+    padding-left: 100px;
+    color: white;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.name-section-first {
+    font-size: 75px;
+    padding-right: 270px;
+}
+
+.name-section-last {
+    font-size: 75px;
+    padding-left: 270px;
+}
+
+.job-title {
     margin-right: 40%;
+    padding: 18px 24px;
+    color: white;
+    font-weight: bold;
 }
