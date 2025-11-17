@@ -4,8 +4,9 @@
     align-items: center;
     justify-content: space-between;
     padding: 32px;
-    max-width: 1000px;
     margin: 0 auto;
+    max-width: none;
+    background-color: black;
 }
 
 .profile-image-container {
@@ -17,7 +18,7 @@
 }
 
 .profile-image {
-    width: 500px;
+    width: 400px;
     height: auto;
 }
 
@@ -25,6 +26,6 @@
     flex: 1;
     padding: 32px;
     text-align: left;
-    font-size: 40px;
+    font-size: 30px;
     color: white;
 }

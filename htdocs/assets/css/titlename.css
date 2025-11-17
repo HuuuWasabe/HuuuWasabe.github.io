@@ -1,9 +1,18 @@
+/* Title Name Layout */
+.name-header {
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
 .name-section {
     text-align: center;
     padding: 18px 24px;
     padding-left: 100px;
     color: white;
     font-weight: bold;
+    background-color: #1f1f1f;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 

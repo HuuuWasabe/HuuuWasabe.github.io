@@ -5,31 +5,38 @@
         <meta name="viewport" content="widtth=device-width, initial-scale=1">
         <title>HuuuWasabe</title>
         <link rel="icon" type="image/x-icon" href="assets/images/letter-n.png">
-
-        <!-- CSS Styles -->
+        
         <link rel="stylesheet" href="assets/css/layout.css">
         <link rel="stylesheet" href="assets/css/menubar.css">
         <link rel="stylesheet" href="assets/css/titlename.css">
         <link rel="stylesheet" href="assets/css/profile-layout.css"
     </head>
     <body>
-        <!-- MENU BAR -->
+        <!-- MENU BAR LAYOUT -->
         <header class="menu-header">
             <div class="menu-logo">
                 <img src="assets/images/letter-n.png" alt="Web Logo" class="logo">
             </div>
             <nav class="menu-nav">
-                <ul>
-                    <li>
-                        <li><a href="">What I do?</a></li>
-                        <li><a href="">What I think</a></li>
-                        <li><a href="">Who am I?</a></li>
-                    </li>
-                </ul>
+                <!-- DROPDOWN -->
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle">What I do?</a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content">
+                            <a href="#">Service 1</a>
+                            <a href="#">Service 2</a>
+                            <a href="#">Service 3</a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#">What I think</a>
+                <a href="#">Who am I?</a>
             </nav>
+            <script src="assets/js/dropdown.js"></script>
         </header>
 
-        <!-- NAME, TITLE, and PROFILE-->
+        <!-- NAME, TITLE, and PROFILE LAYOUT-->
         <section class="name-section">
             <h1 class="name-section-first" title="Please Hire me...">NIL JEDIDIAH G.</h1>
             <h1 class="name-section-last" title="Please Hire me...">SAN GABRIEL</h1>
@@ -41,10 +48,15 @@
             </div>
             <div class="profile-text">
                 <p>
-                    I'm a passionate web developer specializing in front-end design and
-                    creating user-friendly interfaces. I love building clean, responsive,
-                    and interactive web experiences.
+                    I am a graduate of Computer Engineering from the Technological Institute of the Philippines,
+                    specializing in Artificial Intelligence and Data Science, and I am eager to begin my carrer
+                    in Software Engineering.<br><br>
                 </p>
-         </section> 
+                <div>
+                    <a href="page3a.html">See More</a>
+                </div>
+         </section>
+         
+         
     </body>
 </html>
