@@ -7,6 +7,7 @@
 .menu-header {
   display: flex;
   align-items: center;
+  position: relative;
   padding: 18px 24px;
   color: white;
   font-weight: bold;
@@ -57,47 +58,67 @@
 }
 
 .dropdown-menu {
-  display: none;                     
   position: absolute;
-  left: 0; 
-  right: 0;                  
-  top: calc(100% + .25rem);
-  background: rgba(141,136,136,.2); 
-  backdrop-filter: blur(4px);        
-  padding: 2rem 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  width: 100vw;                    
+  background: rgba(30, 30, 30, 0.95);
+  backdrop-filter: blur(8px);
+  padding: 2rem 1rem;
   opacity: 0;
   visibility: hidden;
-  transition: opacity .25s ease, visibility .25s;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(-10px);
+  z-index: 999;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 .dropdown-menu.show {
-  display: block;
   opacity: 1;
   visibility: visible;
+  transform: translateY(0);
 }
 
 .dropdown-content {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 600px;               
+  margin: 0;                 
+  padding: 0 1rem;
   display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;         
+  gap: 0.75rem;                  
+  color: #fff;
 }
 
 .dropdown-content a {
-  color: #fff;
-  font-weight: 600;
-  padding: 5rem 1rem;
+  display: block;                 
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.2s;
+  font-weight: 500;
 }
 
 .dropdown-content a:hover {
-  background: rgba(255, 255, 255, .1);
+  background: rgba(255, 255, 255, .12);
+}
+
+.arrow {
+  font-size: 0.8em;
+  margin-left: 4px;
+  transition: transform 0.2s;
+}
+
+.dropdown-menu.show + .dropdown-toggle .arrow,
+.dropdown-toggle[aria-expanded="true"] .arrow {
+  transform: rotate(180deg);
 }
 
 @media (max-width: 768px) {
   .dropdown-content {
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding: 0 2rem;
   }
+  .dropdown-menu { padding: 1.5rem 0; }
 }
