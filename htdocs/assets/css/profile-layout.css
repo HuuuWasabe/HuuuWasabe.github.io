@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 32px;
+    padding: 2rem;
     margin: 0 auto;
     max-width: none;
     background-color: black;
@@ -24,7 +24,7 @@
 
 .profile-text {
     flex: 1;
-    padding: 32px;
+    padding: 2rem;
     text-align: left;
     font-size: 30px;
     color: white;
@@ -38,6 +38,3 @@
     color: white;
 }
 
-.sidebar {
-    display: flex;
-}
