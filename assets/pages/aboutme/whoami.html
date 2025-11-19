@@ -3,28 +3,27 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="widtth=device-width, initial-scale=1">
-        <title>HuuuWasabe</title>
-        <link rel="icon" type="image/x-icon" href="assets/images/letter-n.png">
+        <title>Who am I?</title>
+        <link rel="icon" type="image/x-icon" href="../../images/letter-n.png">
 
-        <link rel="stylesheet" href="assets/css/layout.css">
-        <link rel="stylesheet" href="assets/css/menubar.css">
-        <link rel="stylesheet" href="assets/css/titlename.css">
-        <link rel="stylesheet" href="assets/css/layout-profile.css"
+        <link rel="stylesheet" href="../../css/layout.css">
+        <link rel="stylesheet" href="../../css/menubar.css">
+        <link rel="stylesheet" href="../../css/about-profile.css"
     </head>
     <body>
-        <!-- Menu Bar Layout -->
+        <!-- MENU BAR LAYOUT -->
         <header class="menu-header">
             <div class="menu-logo">
-                <a href="index.html"><img src="assets/images/letter-n.png" alt="Web Logo" title="HuuuWasabe" class="logo"></a>
+                <a href="../../../index.html"><img src="../../images/letter-n.png" alt="Web Logo" title="HuuuWasabe" class="logo"></a>
             </div>
             <nav class="menu-nav">
-                <!-- Dropdown -->
+                <!-- DROPDOWN -->
                 <div class="dropdown">
                     <a href="#" class="dropdown-toggle" aria-expanded="false">What I did?</a>
                 </div>
                     <div class="dropdown-menu">
                         <div class="dropdown-content">
-                            <!-- Dropdown sidebar -->
+                            <!-- SIDE BAR -->
                             <div id="sidebar-section" class="sidebar-container">
                                 <aside class="sidebar">
                                     <div class="sidebar-item active" data-target="sw">Software</div>
@@ -32,15 +31,15 @@
                                     <div class="sidebar-item" data-target="web">Web Development</div>
                                     <div class="sidebar-item" data-target="dp">Design Projects</div>
                                 </aside>
-                                <!-- Sidebar item contents -->
+                                <!-- SIDEBAR CONTENTS -->
                                 <section class="sidebar-content">
                                     <div id="sw" class="sidebar-content-box active">
-                                        <a href="/assets/pages/software/soft-1.html">3D Renderer made with C++</a>
+                                        <a href="../../pages/software/soft-1.html">3D Renderer made with C++</a>
                                     </div>
                                     <div id="app" class="sidebar-content-box">
                                     </div>
                                     <div id="web" class="sidebar-content-box">
-                                        <a href="/assets/pages/web/web-1.html">Web Server w/ custom web framework</a>
+                                        <a href="../../pages/web/web-1.html">Web Server w/ custom web framework</a>
                                         <a href="#">Redis for a web server</a>
                                     </div>
                                     <div id="dp" class="sidebar-content-box">
@@ -53,32 +52,30 @@
                         </div>
                     </div>
                 <!-- <a href="page2a.html">What I think</a> -->
-                <a href="/assets/pages/aboutme/whoami.html">Who am I?</a>
+                <a href="whoami.html">Who am I?</a>
             </nav>
         </header>
-        <script src="assets/js/dropdown.js"></script>
+        <script src="../../js/dropdown.js"></script>
 
-        <!-- Introductory header-->
-        <section class="name-section">
-            <div title="Computer Engineer graduate">
-                <h1 class="name-section-first">NIL JEDIDIAH G.</h1>
-                <h1 class="name-section-last">SAN GABRIEL</h1>
+        <section class="about-section">
+            <div class="about-content">
+                <div class="line"></div>
+                <div class="about-text">
+                    <h1>Professional Summary</h1>
+                    <p>
+                        An aspiring Software Engineer / Data Scientist with a solid foundation in programming and 
+                        software development, proficient in Python and C/C++. Experienced in web development using HTML, 
+                        CSS, and JavaScript. Brings additional expertise in data science, including AI, data analysis, 
+                        and machine learning, to create intelligent and data-driven software solutions. Passionate about 
+                        building efficient, reliable, and innovative applications while continuously expanding technical 
+                        skills and knowledge.
+                    </p>
+                </div>
+                <div class="line"></div>
+            </div>
+            <div class="about-image">
+                <img src="../../images/profile-home.jpg" alt="The man himself">
             </div>
         </section>
-
-        <section class="profile-section">
-            <div class="profile-image-container">
-                <img src="assets/images/profile-home.jpg" alt="A handsome man" class="profile-image">
-            </div>
-            <div class="profile-text">
-                <p>
-                    I am a graduate of Computer Engineering from the Technological Institute of the Philippines,
-                    specializing in Artificial Intelligence and Data Science, and I am eager to begin my carrer
-                    in Software Engineering.<br><br>
-                </p>
-                <div>
-                    <a href="/assets/pages/aboutme/whoami.html">See More</a>
-                </div>
-         </section>
     </body>
 </html>

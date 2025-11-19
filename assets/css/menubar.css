@@ -180,12 +180,3 @@
     color: #ddd;
     text-decoration: none;
 }
-
-@media (max-width: 768px) {
-  .dropdown-content {
-    grid-template-columns: 1fr;
-    gap: 0.5rem;
-    padding: 0 2rem;
-  }
-  .dropdown-menu { padding: 1.5rem 0; }
-}
